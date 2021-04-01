@@ -3,15 +3,31 @@
   <head>
     <meta charset="utf-8"/>
     <title>FmwNgapp</title>
-    <base href="/fmwtest/"/>
+    <base href="/"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap" rel="stylesheet"/>
+    <script defer="" src="https://cdn.jsdelivr.net/gh/faisalman/ua-parser-js/dist/ua-parser.min.js"></script>
     <script defer="" src="assets/support.js"></script>
   <link rel="stylesheet" href="styles.css"></head>
   <body>
+    <div class="fade d-flex loading" id="loading">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="mt-3">Please Wait..</div>
+    </div>
+
     <app-root></app-root>
     <div id="userAgent"></div>
+    <script defer="" async="">
+      document.getElementById("loading").classList.remove("d-flex");
+      document.getElementById("loading").classList.add("d-none");
+    </script>
+
+    <!-- For IE 11 -->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script defer="" src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
   <script src="runtime.js" defer></script><script src="polyfills.js" defer></script><script src="scripts.js" defer></script><script src="vendor.js" defer></script><script src="main.js" defer></script></body>
 </html>

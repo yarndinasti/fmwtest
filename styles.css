@@ -10060,5 +10060,19 @@ textarea.form-control-lg {
 }
 /*# sourceMappingURL=bootstrap.css.map */
 /* You can add global styles to this file, and also import other style files */
+.loading {
+  background: #c9c9c9;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Rubik", sans-serif;
+  transition: all 0.5s ease;
+}
 
 /*# sourceMappingURL=styles.css.map*/
